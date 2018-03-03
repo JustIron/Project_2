@@ -11,14 +11,14 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-          $zameni = array ("krysy", "buvola", "tygra", "zajice", "draka", "hada", "koně", "kozy", "ovce", "opice", "kohouta", "psa");
+          $znameni = array ("krysy", "buvola", "tygra", "zajice", "draka", "hada", "koně", "kozy", "ovce", "opice", "kohouta", "psa");
           
           
-          $rok = "date('Y');
+          $rok = date('Y');
           
-          $aktualniZnameni = $znameni ($rok - 2014);
-          echo("Dnešní rok je ve znameni" . $aktualniZnameni);
-          echo($rok);
+          $aktualniznameni = $znameni[$rok - 2014];
+          echo("Dnešní rok je ve znameni " . $aktualniznameni . ".");
+          
           
         ?>
     </body>
