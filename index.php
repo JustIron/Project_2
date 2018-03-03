@@ -11,7 +11,12 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
+            $a = 12;
+            $b = 10;
+            $obvod = 2*($a + $b);
+            $obsah = $a * $b;
+            
+            echo("Obsah obdelníku je $obsah cm a obvod obdelníku je $obvod cm.");
         ?>
     </body>
 </html>
