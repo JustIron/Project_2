@@ -11,13 +11,10 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-            $a = 12;
-            $b = 10;
-            $cm = "cm";
-            $obvod = 2*($a + $b);
-            $obsah = $a * $b;
-            
-            echo("Obsah obdelníku se stranami o délkách $a $cm a $b $cm je $obsah $cm  a obvod obdelníku je $obvod $cm  .");
+           $pole = array(3500, 2800, 1280, 1920, 4320);
+           $prumer = array_sum($pole) / count($pole);
+           $odchylka = $prumer - $pole [2];
+           echo("Cena 3. produktu se od průměru liší o " . $odchylka . " kč");
         ?>
     </body>
 </html>
