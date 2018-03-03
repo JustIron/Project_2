@@ -11,10 +11,15 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-           $pole = array(3500, 2800, 1280, 1920, 4320);
-           $prumer = array_sum($pole) / count($pole);
-           $odchylka = $prumer - $pole [2];
-           echo("Cena 3. produktu se od průměru liší o " . $odchylka . " kč");
+          $zameni = array ("krysy", "buvola", "tygra", "zajice", "draka", "hada", "koně", "kozy", "ovce", "opice", "kohouta", "psa");
+          
+          
+          $rok = "date('Y');
+          
+          $aktualniZnameni = $znameni ($rok - 2014);
+          echo("Dnešní rok je ve znameni" . $aktualniZnameni);
+          echo($rok);
+          
         ?>
     </body>
 </html>
